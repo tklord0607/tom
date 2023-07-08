@@ -2,6 +2,7 @@
 
 
 #增加y/n選項來進行要不要再玩一次猜數字
+#使用了def function區塊再加上while
 import random
 def pg():
     min = 1
