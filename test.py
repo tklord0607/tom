@@ -23,5 +23,4 @@ while True:
         print("NO")
         print(f"你已猜了{c}次")
 print("GG")
-while True
       Y
