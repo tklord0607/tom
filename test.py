@@ -1,15 +1,12 @@
-#!/usr/bin/python3.10.4 <-指用python第幾版來寫的
-
-
-#增加y/n選項來進行要不要再玩一次猜數字
-import random
+#import random
 
 min = 1
 max = 100
 c=0
 t=random.randint(min,max)
 print("====???====\n\n")
-    
+t=random1~10隨機產生，c=0 當k=t時遊戲結束，k由玩家輸入數值
+#在while的區塊下 每執行一次c由0+1累計
 while True:
     k=int(input(f"??範圍{min}~~{max}:"))
     c +=1
@@ -26,4 +23,4 @@ while True:
         print("NO")
         print(f"你已猜了{c}次")
 print("GG")
-        
+
