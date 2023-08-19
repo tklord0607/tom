@@ -15,6 +15,10 @@ def getStockNames() -> pd.Series:
     code_series:pd.Series = pd.Series(stock_codes)
     return code_series
 
+def get_dataFrame(menu:list,start_year)->pd.DataFrame:
+    stock_data=ffn.get(menu,start=start_year)
+    return stock_data
+
 def displayData(dataFrame:pd.DataFrame,start_year) -> None:
     st.subheader(f'{start_year}~目前的歷史資料')
     st.dataframe(dataFrame)
@@ -36,4 +40,5 @@ prices = ffn.get(names, start='2010-01-01')
 
 if len(names) !=0:
  start_yeargo=st.sidebar.selectbox("起始年",range(2000,2023))
+ get_dataFrame(names,f"{start_year}-01-01")
  displayData(prices,start_year=start_yeargo)
