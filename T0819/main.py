@@ -39,6 +39,6 @@ for name in options:
 prices = ffn.get(names, start='2010-01-01')
 
 if len(names) !=0:
- start_yeargo=st.sidebar.selectbox("起始年",range(2000,2023))
+ start_year=st.sidebar.selectbox("起始年",range(2000,2023))
  get_dataFrame(names,f"{start_year}-01-01")
- displayData(prices,start_year=start_yeargo)
+ displayData(prices,start_year=start_year)
