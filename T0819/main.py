@@ -35,4 +35,5 @@ for name in options:
 prices = ffn.get(names, start='2010-01-01')
 
 if len(names) !=0:
+ st.sidebar.selectbox("起始年")
  displayData(prices,start_year='2010-01-01')
